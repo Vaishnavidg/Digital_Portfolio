@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio_website</title>
+    <script
+      src="https://kit.fontawesome.com/8001600bc3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Images/logo-removebg-preview.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Experiences</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <!-- <p>App Developer.</p> -->
+          <h1>
+            Hi, I'm <span>Vaishnavi </span> <br />
+            Dnyaneshwar Gaikwad.
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------about --------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/user.png" class="user" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <h6>
+              I'm Vaishnavi Dnyaneshwar Gaikwad, An enthusiastic engineer and App, Web developer. I specialize in using Java for my programming needs. 
+            Passionate about staying up-to-date with the latest trends and
+            technologies in the field.
+          </h6>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <!-- <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p> -->
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Languages</span><br/><i class="fa-brands fa-java"></i>Java<i class="fa-solid fa-circle-c"></i>C Programming <i class="fa-brands fa-square-js"></i>Javascript </li></li>
+                <li><span>Tools</span><br /><i class="fa-brands fa-github"></i>GitHub<i class="fa-brands fa-windows"></i>Windows</li>
+                <li><span>Framework</span> <br/><i class="fa-solid fa-code"></i>OpenCV <i class="fa-brands fa-react"></i> React Native</li>
+                <li><span>Technology</span><br /><i class="fa-sharp fa-solid fa-code"></i>HTML <i class="fa-brands fa-css3"></i> CSS<i class="fa-solid fa-database"></i> SQL<i class="fa-solid fa-code-branch"></i>Firebase</li>
+              </ul>
+            </div>
+            <!-- <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>INTHINK TECHNOLOGIES || App Developer Intern</span> <br/><br /> Working on an App</li>
+                <li><span>SIDDHATEK ENTERPRISE || App Developer Intern</span> <br /> To build screens of a Surveillance App using Flutter</li>
+                <li><span>CODEKUL PRIVATE LIMITED</span>|| Fullstack Java Developer Intern<br />Developing a service platform which acts as an interface between user and
+                  company<br/> ReactJS, CSS, and Html5 forfrontend.<br/> ReactJS, CSS, and Html5 forfrontend.</li>
+                <li><span>App Devlopment</span><br />App</li>
+              </ul>
+            </div> -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>MIT ACADEMY OF ENGINEERING, PUNE</span><br /><p>2019-2023</p><br/>Pursuing Bachelor in Technology Degree in Electronics and Telecommunication Engineering.</li>
+                <li><span>KENDRIYA VIDYALAYA NRC, NASHIK</span><br /><p>2018-2019</p><br/>PCM with COMPUTER SCIENCE.</li>
+                <li><span>KENDRIYA VIDYALAYA AMBARNATH</span><br /><p>2016-2017</p><br/>Secondary School with CBSE board</li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------------Experiences---------------------------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Experiences</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-mobile"></i>
+            <!-- <i class="fa-solid fa-crop"></i> -->
+            <h2>InThink Technologies, Pune </h2>
+            <span>App Developer Intern</span>
+              <br/>04 Jan,2023 - Present  | Pune
+              <ul><li><p>Building an app for security purpose</p> </li></ul>
+              <ul><li><p>Technology used:React Native and Firebase</p> </li></ul>
+            
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-mobile"></i>
+            <!-- <i class="fa-solid fa-crop"></i> -->
+            <h2>SIddhatek Enterprises, Pune </h2>
+            <span>App Developer Intern</span>
+              <br/>13 Jun,2022 - 13 Aug,2022 | Pune
+              <ul><li><p>To build screens of a Surveillance App using Flutter</p> </li></ul>
+              <ul><li><p>Technology used:figma</p> </li></ul>
+            
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+          <div>
+            <!-- <i class="fa-solid fa-webhook"></i> -->
+            <!-- <i class="fa-solid fa-browser"></i> -->
+            <i class="fa-solid fa-crop"></i>
+            <h2>Codekul Private Limited, Pune </h2>
+            <span>Fullstack Java Developer Intern</span>
+              <br/>12 Jun,2021 - 08 Aug,2021 | Pune
+              <ul><li><p><ul><li><p>To build screens of a Surveillance App using Flutter</p> </li></ul></p> </li></ul>
+              <ul><li><p>ReactJS, CSS, and Html5 forfrontend.</p> </li></ul>
+              <ul><li><p>Spring Boot and Java for backend.</p> </li></ul>
+              <ul><li><p>Technology used:Java, CSS, Html5,SQL,Spring Boot</p> </li></ul>
+            
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------------portfolio-------------------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/app work1.png" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>The app connects you with people around the world</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/app2_todo.png" />
+            <div class="layer">
+              <h3>Todo App</h3>
+              <p>The app connects you with people around the world</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/chatApp_work3.png" />
+            <div class="layer">
+              <h3>ChatApp App</h3>
+              <p>The app connects you with people around the world</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work4_robotics.jpg" />
+            <div class="layer">
+              <h3>AI-based Human Assistant robot
+              </h3>
+              <p>Working on an assistant robot which will listen to the command and act
+              accordingly.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work5_ml.jpg" />
+            <div class="layer">
+              <h3>Breast Cancer Detection </h3>
+              <p>Breast Cancer Detection using Deep learning</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- ------------------------Contact------------------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-sharp fa-solid fa-paper-plane"></i
+              >vaishnavig3001@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>7775830346</p>
+            <div class="social-icons">
+              <a href="my facebook link">
+                <i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="Images/RESUME_VaishnaviDG.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright ©2023 Vaishnavi. Made by Vaishnavi D Gaikwad</p>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------- -->
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwh0esGQ9o_20yomekCz9DxTLhGEhjG7LVLqwjMc33JEktHMVffpKSlsiXCUT2zaWHR/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg")
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {msg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+            msg.innerHTML =""
+          },5000)
+          form.reset()
+        })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
